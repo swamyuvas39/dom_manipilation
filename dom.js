@@ -29,6 +29,23 @@
 // changes  style 
 //head.style.borderBottom='solid black 3px';
 
+//GET ELEMENTS BY CLASS NAME
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);//gives list of items
+console.log(items[2]);//accessing items
+items[2].textContent="Hello";// changing text in the item
+items[2].style.fontWeight='bold';//changing style
+items[2].style.backgroundColor = 'green';
+//items.style.backgroundColor="green";// we cannot apply to all the items, we need to use for loop
+for (var i=0; i<items.length; i++)
+{
+    items[i].style.fontWeight='bold'; // it bold all the items
+}
+
+
+
+
+
 
 
 
