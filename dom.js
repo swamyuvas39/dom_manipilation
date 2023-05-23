@@ -92,13 +92,115 @@
 
 // second item font color changed to green
 
-secondItem.style.color = 'green';
+// secondItem.style.color = 'green';
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-for (var i=0; i<odd.length; i++)
-{
-    odd[i].style.backgroundColor = 'green';
-}
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// for (var i=0; i<odd.length; i++)
+// {
+//     odd[i].style.backgroundColor = 'green';
+// }
+
+// TRAVERSING THE DOM //
+
+// var itemList = document.querySelector('#items');
+// console.log(itemList);
+
+// //parentNode
+
+// console.log(itemList.parentNode); // gives parentNode of the itemList
+// itemList.parentNode.style.backgroundColor = 'pink';// changes the background color of parentNode
+// console.log(itemList.parentNode.parentNode);// gives parentNode of ParentNode
+// itemList.parentNode.parentNode.style.backgroundColor='yellow';
+
+//parentElement
+
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = 'pink';// changes the background color of parentElement
+// console.log(itemList.parentElement.parentElement);// gives parentElement of ParentElemet
+
+//childNodes
+
+// console.log(itemList.childNodes);
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].textContent="Hello";
+// itemList.children[1].style.backgroundColor='yellow';
+
+// firstChild
+
+//console.log(itemList.firstChild); //it icludes white spaces as text, dont prefere this
+
+//firstElementChild
+
+// console.log(itemList.firstElementChild); // it gives the first element 
+// itemList.firstElementChild.textContent="Hello";
+
+// lastChild
+
+//console.log(itemList.lastChild);
+
+//lastElementChild
+
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent="Hello";
+
+//nextSibling
+
+//console.log(itemList.nextSibling); // it gives next sibling whether it is white space or element
+//itemList.nextSibling.textContent="Hello";// it insert at the end of the list
+
+//nextElementSibling
+
+//console.log(itemList.nextElementSibling);// it gives next sibling element, if there is no element it retuns null
+
+//previousSibling
+
+//console.log(itemList.previousSibling);
+
+//previousElementSibling
+
+//console.log(itemList.previousElementSibling);
+
+//createElement
+
+//lets create a newDiv
+
+// var newDiv = document.createElement('div');
+// //add className
+// newDiv.className="hello";
+// //add Id 
+// newDiv.id="newdiv";
+// newDiv.textContent= "Swamyuvas";
+// //setAttribute
+// newDiv.setAttribute ('title', 'hello div');
+// //create text node
+// var newDivText = document.createTextNode('Hello world');
+// //add text to div
+// newDiv.appendChild(newDivText);
+
+// var container = document.querySelector('header.container');
+// var h1 = document.querySelector('header h1');
+// console.log(newDiv);
+// container.insertBefore(newDiv,h1);
+
+/// Access the <head> element
+var headElement = document.head;
+
+// Create a new text node
+var newText = document.createTextNode('Hello');
+
+// Access the <title> element
+var titleElement = headElement.querySelector('title');
+
+// Insert the new text node before the <title> element
+headElement.insertBefore(newText, titleElement);
+
+//Access the item1 li element
+var items = document.getElementById('items');
+console.log(items);
+var list = items.querySelector('li');
+console.log(list);
+items.insertBefore(newText,list);
 
 
 
