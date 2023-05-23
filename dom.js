@@ -183,24 +183,25 @@
 // console.log(newDiv);
 // container.insertBefore(newDiv,h1);
 
-/// Access the <head> element
-var headElement = document.head;
+// /// Access the <head> element
+// var headElement = document.head;
 
-// Create a new text node
-var newText = document.createTextNode('Hello');
+// // Create a new text node
+// var newText = document.createTextNode('Hello');
 
-// Access the <title> element
-var titleElement = headElement.querySelector('title');
+// // Access the <title> element
+// var titleElement = headElement.querySelector('title');
 
-// Insert the new text node before the <title> element
-headElement.insertBefore(newText, titleElement);
+// // Insert the new text node before the <title> element
+// headElement.insertBefore(newText, titleElement);
 
-//Access the item1 li element
-var items = document.getElementById('items');
-console.log(items);
-var list = items.querySelector('li');
-console.log(list);
-items.insertBefore(newText,list);
+// //Access the item1 li element
+// var items = document.getElementById('items');
+// console.log(items);
+// var list = items.querySelector('li');
+// console.log(list);
+// items.insertBefore(newText,list);
+
 
 
 
