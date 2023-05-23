@@ -79,17 +79,26 @@
 // var SecondItem = document.querySelector('.list-group-item:nth-child(2)');
 // SecondItem.style.color = 'blue';
 
-// second item background color green
-var secondItem = document.querySelector('li:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
-// Using display property
-// var thirdItem = document.querySelector('li:nth-child(2)');
-//thirdItem.style.display = 'none';
+// // second item background color green
+ var secondItem = document.querySelector('li:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
+// // Using display property
+// // var thirdItem = document.querySelector('li:nth-child(2)');
+// //thirdItem.style.display = 'none';
 
-// Using visibility property
-const thirdItem = document.querySelector('li:nth-child(3)');
-thirdItem.style.visibility = 'hidden';
+// // Using visibility property
+// const thirdItem = document.querySelector('li:nth-child(3)');
+// thirdItem.style.visibility = 'hidden';
 
+// second item font color changed to green
+
+secondItem.style.color = 'green';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for (var i=0; i<odd.length; i++)
+{
+    odd[i].style.backgroundColor = 'green';
+}
 
 
 
